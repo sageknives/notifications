@@ -50,6 +50,7 @@ app.get('/push', function(req, res){
     device_tokens.push(device_token);
 
     sender.send(message, device_tokens, retry_times, function(result){
+        console.log(device_token);
         console.log(result);
         console.log('push sent to: ' + device_token);
     });
