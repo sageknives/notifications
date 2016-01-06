@@ -18,7 +18,7 @@ var server = app.listen(3000, function(){
 var device_token;
 
 app.post('/register', function(req, res){
-    console.log("in register");
+    console.log("in register is this working");
     device_token = req.body.device_token;
     console.log('device token received');
     console.log(device_token);
